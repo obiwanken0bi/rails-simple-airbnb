@@ -1,0 +1,26 @@
+<h2>All our flats</h2>
+<p><%= @flats.count %> flats available</p>
+
+<div class="flats-list row">
+  <% @flats.each do |flat| %>
+    <div class="flat-card col-4">
+      <div class="photo">
+      
+      </div>
+      <div class="flat-infos">
+        <h3><strong><%= flat.name %></strong></h3>
+        <p><%= flat.address %></p>
+        <div class="guests-and-price">
+          <p><i class="fas fa-users"></i> <%= flat.number_of_guests %></p>
+          <p><i class="fas fa-euro-sign"></i> <%= flat.price_per_night %></p>
+        </div>
+      </div>
+      <hr class="m-0">
+      <div class="card-buttons">
+        <a href="#">More info</a>
+        <a href="#">Edit</a>
+        <a href="#">Remove</a>
+      </div>
+    </div>
+  <% end %>
+</div>
