@@ -7,7 +7,7 @@ puts "Creating 5 flats..."
 5.times do |i|
   flat = Flat.create!(
     name: Faker::Games::Zelda.unique.game,
-    address: Faker::Address.unique.full_address,
+    address: Faker::Address.street_address + "," + Faker::Address.city + " (" + Faker::Address.state + " - USA)",
     description: Faker::Quote.unique.yoda,
     price_per_night: (8..100).to_a.sample * 5,
     number_of_guests: (1..16).to_a.sample
