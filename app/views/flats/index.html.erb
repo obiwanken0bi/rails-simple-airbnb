@@ -1,29 +1,29 @@
-<h1>All our Flats</h1>
-<p class="mb-2"><%= @flats.count %> flats available</p>
+<div class="container mt-3">
+  <h1>All our Flats</h1>
+  <p class="mb-2"><%= @flats.count %> flats available</p>
 
-<div class="flats-list row">
-  <% @flats.each do |flat| %>
-    <div class="col-4">
-      <div class="flat-card my-3">
-        <div class="photo">
-        
-        </div>
-        <div class="flat-infos p-4">
-          <h3><strong><%= flat.name %></strong></h3>
-          <p class="mb-0"><%= flat.address.split(",")[0] %>,</p>
-          <p><%= flat.address.split(",")[1] %></p>
-          <div class="guests-and-price d-flex">
-            <p class="mb-0"><i class="fas fa-users"></i> <%= flat.number_of_guests %></p>
-            <p class="mb-0 ml-3"><i class="fas fa-euro-sign"></i> <%= flat.price_per_night %></p>
+  <div class="flats-list row">
+    <% @flats.each do |flat| %>
+      <div class="col-4">
+        <div class="flat-card my-3">
+          <div class="photo"></div>
+          <div class="flat-infos p-4">
+            <h3><strong><%= flat.name %></strong></h3>
+            <p class="mb-0"><%= flat.address.split(",")[0] %>,</p>
+            <p><%= flat.address.split(",")[1] %></p>
+            <div class="guests-and-price d-flex">
+              <p class="mb-0"><i class="fas fa-users"></i> <%= flat.number_of_guests %></p>
+              <p class="mb-0 ml-3"><i class="fas fa-euro-sign"></i> <%= flat.price_per_night %></p>
+            </div>
+          </div>
+          <hr class="m-0">
+          <div class="card-buttons d-flex p-3">
+            <%= link_to "More info", flat_path(flat) %>
+            <a href="#", class="ml-3 text-warning">Edit</a>
+            <a href="#", class="ml-3 text-danger">Remove</a>
           </div>
         </div>
-        <hr class="m-0">
-        <div class="card-buttons d-flex p-3">
-          <a href="#">More info</a>
-          <a href="#", class="ml-3 text-warning">Edit</a>
-          <a href="#", class="ml-3 text-danger">Remove</a>
-        </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>

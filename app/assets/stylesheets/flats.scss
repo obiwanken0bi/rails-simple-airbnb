@@ -30,3 +30,59 @@
 .add-flat {
   background-color: #f8f9fa;
 }
+
+// Show
+.show-container {
+  margin-top: -75px;
+}
+
+.flat-img {
+  background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200');
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.flat-title, .flat-description, .booking-form, .flat-details, .socials {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.flat-title p {
+  font-size: 1.2em;
+}
+
+.flat-description {
+  height: 500px;
+
+  h2 {
+    font-size: 1.7em;
+  }
+}
+
+.booking-form {
+  h3 {
+    font-size: 1.3em;
+  }
+
+  .input-label {
+    background-color: #e9ecef;
+    border-radius: 4px 0 0 4px;
+    padding: 6px 12px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-right: none;
+  }
+
+  .btn-success {
+    width: 100%;
+  }
+}
+
+.share-buttons {
+  font-size: 1.8em;
+
+  a {
+    color: #212529;
+  }
+}
