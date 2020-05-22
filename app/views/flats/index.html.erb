@@ -7,6 +7,7 @@
       <div class="col-4">
         <div class="flat-card my-3">
           <div class="photo"></div>
+          <%= image_tag(flat.picture_url, height: '180', width: '100%') %>
           <div class="flat-infos p-4">
             <h3><strong><%= flat.name %></strong></h3>
             <p class="mb-0"><%= flat.address.split(",")[0] %>,</p>

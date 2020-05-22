@@ -3,16 +3,8 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 // Index
-
 .flat-card {
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
-
-  .photo {
-    background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200');
-    background-position: center;
-    background-size: cover;
-    height: 180px;
-  }
 
   .flat-infos {
     background-color: #f8f9fa;
@@ -37,10 +29,8 @@
 }
 
 .flat-img {
-  background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200');
-  height: 350px;
-  background-position: center;
-  background-size: cover;
+  object-fit: cover;
+  object-position: center;
 }
 
 .flat-title, .flat-description, .booking-form, .flat-details, .socials {
