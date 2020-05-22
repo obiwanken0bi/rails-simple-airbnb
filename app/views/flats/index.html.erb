@@ -20,7 +20,11 @@
           <div class="card-buttons d-flex p-3">
             <%= link_to "More info", flat_path(flat) %>
             <%= link_to "Edit", edit_flat_path(flat), class: "ml-3 text-warning" %>
-            <a href="#", class="ml-3 text-danger">Remove</a>
+            <%= link_to "Remove",
+                        flat_path(flat),
+                        method: :delete,
+                        data: { confirm: "Are you sure?" },
+                        class: "ml-3 text-danger" %>
           </div>
         </div>
       </div>
